@@ -1,0 +1,41 @@
+.chart, .people, .message-cloud, .swirl, .channels-chart, 
+.referrals-chart, .man-green, .man-orange, .customers-blue, .customers-blue:hover, 
+.icon-shadow, .dashboard-blue, .dashboard-green, .messages-blue, .messages-blue:hover, 
+.promotions-blue, .promotions-green, .page-blue, .page-blue:hover, .analytics-blue, .search, .check-orange, .check, .help, 
+.man-blue:hover, .settings-gray, .settings, .article, .ribbon-left, 
+.light-bulb, .arrow-left, .arrow-right
+{ display: inline-block; background: url('img/spritesheet-1.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.chart { background-position: -1px -0px; width: 451px; height: 214px; }
+.people { background-position: -1px -215px; width: 268px; height: 171px; }
+.message-cloud { background-position: -1px -387px; width: 239px; height: 150px; }
+.swirl { background-position: -1px -538px; width: 225px; height: 160px; }
+.channels-chart { background-position: -270px -215px; width: 85px; height: 84px; }
+.referrals-chart { background-position: -356px -215px; width: 85px; height: 85px; }
+.man-green { background-position: -270px -300px; width: 78px; height: 82px; }
+.man-orange { background-position: -349px -301px; width: 78px; height: 82px; }
+.customers-blue { background-position: -270px -383px; width: 62px; height: 42px; }
+.customers-blue:hover { background-position: -333px -384px; width: 62px; height: 42px; }
+.icon-shadow { background-position: -241px -424px; width: 60px; height: 5px; }
+.dashboard-blue { background-position: -302px -427px; width: 58px; height: 58px; }
+.dashboard-blue:hover { background-position: -361px -427px; width: 58px; height: 58px; }
+.messages-blue { background-position: -241px -432px; width: 57px; height: 48px; }
+.messages-blue:hover { background-position: -241px -481px; width: 57px; height: 48px; }
+.promotions-blue { background-position: -299px -486px; width: 50px; height: 50px; }
+.promotions-blue:hover { background-position: -350px -486px; width: 50px; height: 50px; }
+.page-blue { background-position: -401px -486px; width: 45px; height: 50px; }
+.page-blue:hover { background-position: -241px -530px; width: 45px; height: 50px; }
+.analytics-blue { background-position: -287px -537px; width: 42px; height: 50px; }
+.analytics-blue:hover { background-position: -330px -537px; width: 42px; height: 50px; }
+.search { background-position: -428px -301px; width: 23px; height: 22px; }
+.check-orange { background-position: -428px -324px; width: 22px; height: 21px; }
+.check { background-position: -428px -346px; width: 22px; height: 20px; }
+.help { background-position: -428px -367px; width: 20px; height: 20px; padding: 0px 8px;}
+.man-blue { background-position: -396px -384px; width: 20px; height: 20px; }
+.settings-gray { background-position: -241px -387px; width: 20px; height: 20px; }
+.settings { background-position: -417px -388px; width: 20px; height: 20px; padding: 0px 0px 0px 0px;}
+.article { background-position: -420px -427px; width: 19px; height: 23px; }
+.ribbon-left { background-position: -373px -537px; width: 15px; height: 40px; }
+.light-bulb { background-position: -420px -451px; width: 14px; height: 23px; }
+.arrow-left { background-position: -438px -388px; width: 11px; height: 18px; }
+.arrow-right { background-position: -396px -405px; width: 11px; height: 18px; }
