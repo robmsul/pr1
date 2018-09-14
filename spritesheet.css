@@ -32,7 +32,7 @@
 .check { background-position: -428px -346px; width: 22px; height: 20px; }
 .help { background-position: -428px -367px; width: 20px; height: 20px; padding: 0px 8px;}
 .man-blue { background-position: -396px -384px; width: 20px; height: 20px; }
-.settings-gray { background-position: -241px -387px; width: 20px; height: 20px; }
+.settings-gray { background-position: -241px -387px; width: 20px; height: 20px; position: absolute; top: 25px; right: 15px; }
 .settings { background-position: -417px -388px; width: 20px; height: 20px; padding: 0px 0px 0px 0px;}
 .article { background-position: -420px -427px; width: 19px; height: 23px; }
 .ribbon-left { background-position: -373px -537px; width: 15px; height: 40px; }

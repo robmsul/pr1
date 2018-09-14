@@ -1,9 +1,20 @@
 @supports (grid-area:auto) { /*ensures CSS Grid is supported by browser*/
-    
+body {
+    font-family: Myriad Pro;
+    color: #777777;
+}
+
+h1 {
+    color: #2498f4;
+    font-size: 30px;
+    font-weight: 100;
+    margin-left: 15px;
+    margin-top: 10px;
+}
 .grid-container {
     display:grid;
     grid-template-columns: auto 480px 480px auto;
-    grid-template-rows: 45px 110px 800px 200px 25px; /*
+    grid-template-rows: 45px 110px 1000px 200px 25px; /*
     grid-template-areas:
         'top top top top'
         'nv nv nv nv'
@@ -11,6 +22,8 @@
         'spc news news spc'
         'spc ft ft spc'; */
     grid-row-gap: 0px;
+    
+
 }
 
 .topbar {
@@ -96,45 +109,86 @@
     grid-row: 5/6;
 }
 
+.gray-box {
+    border-radius: 8px;
+    background-image: linear-gradient(rgba(155,155,155,.2), rgba(255,255,255,1));
+    position: relative;
+}
+
 .main-grid {
     display: grid;
-    grid-template-columns: 1/12 1/12 1/12 1/12 1/12 1/12 1/12 1/12 1/12 1/12 1/12 1/12;
-    grid-template-rows: 1/12 1/12 1/12 1/12 1/12 1/12 1/12 1/12 1/12 1/12 1/12 1/12;
-    grid-gap: 10px;
+    grid-template-columns: repeat (12, 1/12);
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+    margin: 10px;
+    position: relative;
+    top: 10px;
+    background: white;
+}
+
+.outline {
+    border: solid 1px #efefef;
 }
 
 .announce {
     grid-column: 1/13;
     grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    vertical-align: middle;
+    align-items: center;
+    border-bottom: none;
 }
 
+#announcement {
+    width: 150px;
+    color: #fe7f13;
+    font-size: 15px;
+    text-align: center;
+    border-right: solid 1px #efefef;
+}
+
+}
 .tasks {
     grid-column: 1/5;
     grid-row: 2/5;
+    border-bottom: none;
+    border-right: none;
+    position: relative;
+}
+
+.task-list {
+    display: flex;
+    justify-content: space-between;
 }
 
 .analytics {
     grid-column: 5/13;
     grid-row: 2/7;
+    border-bottom: none;
 }
 
 .rec {
     grid-column: 1/5;
-    grid-row: 5/10;
+    grid-row: 7/13;
+    border-right: none;
 }
 
 .contacts {
     grid-column: 5/9;
     grid-row: 7/10;
+    border-bottom: none;
 }
 
 .customers {
     grid-column: 9/13;
     grid-row: 7/10;
+    border-bottom: none;
 }
 
 .q-a {
-    grid-column: 1/13;
+    grid-column: 5/13;
     grid-row: 10/13;
 }
 .icon {
@@ -158,10 +212,6 @@
     font-size: 36px;
     font-weight: 100;
     margin-top: 10px;
-}
-
-.dashboard div {
-    margin: 0px;
 }
 
 .search-container {
@@ -189,9 +239,11 @@
   right: -3px;
 }
 
-@media screen and (max-width:767px){
-    .site {
 
+
+@media screen and (max-width:960px){
+    .grid-container {
+        grid-template-columns: 0px 50% 50% 0px;
     } 
 }
 
