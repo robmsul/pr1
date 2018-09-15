@@ -227,6 +227,61 @@ h2 {
     border-radius: 2px;
 }
 
+#chart-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pie-charts {
+    display: initial;
+    border-left: solid 1px #efefef;
+    justify-content: center;
+    padding-left: 2%;
+    text-align: center;
+}
+
+.social-boxes {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.social-checkbox {
+    display: flex;
+}
+
+.checkbox {
+    height: 15px;
+    width: 15px;
+    border: solid 1px #efefef;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.sm-box {
+    border-radius: 4px;
+    width: auto;
+    height: 15px;
+    color: white;
+    padding-left: 7px;
+    padding-right: 10px;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+#facebook {
+    background: #114570;
+}
+#twitter {
+    background: #2298f4;
+}
+#foursquare {
+    background: #3a599b;
+}
+#google {
+    background: #31cc66;
+}
+
 .rec {
     grid-column: 1/5;
     grid-row: 7/13;
