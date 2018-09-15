@@ -1,8 +1,8 @@
 .chart, .people, .message-cloud, .swirl, .channels-chart, 
-.referrals-chart, .man-green, .man-orange, .customers-blue, .customers-blue:hover, 
-.icon-shadow, .dashboard-blue, .dashboard-green, .messages-blue, .messages-blue:hover, 
+.referrals-chart, .man-green, .man-orange, .customers-blue, 
+.icon-shadow, .dashboard-blue, .dashboard-green, .messages-blue, .messages-blue, 
 .promotions-blue, .promotions-green, .page-blue, .page-blue:hover, .analytics-blue, .search, .check-orange, .check, .help, 
-.man-blue:hover, .settings-gray, .settings, .article, .ribbon-left, 
+.man-blue, .settings-gray, .settings, .article, .ribbon-left, 
 .light-bulb, .arrow-left, .arrow-right
 { display: inline-block; background: url('img/spritesheet-1.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
  
@@ -31,7 +31,7 @@
 .check-orange { background-position: -428px -324px; width: 22px; height: 21px; }
 .check { background-position: -428px -346px; width: 22px; height: 20px; }
 .help { background-position: -428px -367px; width: 20px; height: 20px; padding: 0px 8px;}
-.man-blue { background-position: -396px -384px; width: 20px; height: 20px; }
+.man-blue { background-position: -396px -384px; width: 20px; height: 20px; margin-top: 3px; margin-left: 5px;}
 .settings-gray { background-position: -241px -387px; width: 20px; height: 20px; position: absolute; top: 25px; right: 15px; }
 .settings { background-position: -417px -388px; width: 20px; height: 20px; padding: 0px 0px 0px 0px;}
 .article { background-position: -420px -427px; width: 19px; height: 23px; }

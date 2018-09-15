@@ -11,6 +11,15 @@ h1 {
     margin-left: 15px;
     margin-top: 10px;
 }
+
+h2 {
+    color: #2498f4;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
 .grid-container {
     display:grid;
     grid-template-columns: auto 480px 480px auto;
@@ -22,7 +31,7 @@ h1 {
         'spc news news spc'
         'spc ft ft spc'; */
     grid-row-gap: 0px;
-    
+    margin-right: 1px;
 
 }
 
@@ -50,12 +59,6 @@ h1 {
     position: relative;
     top: -30px;
     left: 100px;
-}
-
-
-.inline {
-    display: inline-block;
-    padding: 3px;
 }
 
 .lines {
@@ -118,7 +121,7 @@ h1 {
 .main-grid {
     display: grid;
     grid-template-columns: repeat (12, 1/12);
-    grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px auto auto auto auto auto auto 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 0px;
     margin: 10px;
     position: relative;
@@ -147,8 +150,17 @@ h1 {
     font-size: 15px;
     text-align: center;
     border-right: solid 1px #efefef;
+    align-items: center;
 }
 
+#arrows {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    border-left: solid 1px #efefef;
+    align-items: center;
+    justify-content: space-between;
+}
 }
 .tasks {
     grid-column: 1/5;
@@ -156,17 +168,63 @@ h1 {
     border-bottom: none;
     border-right: none;
     position: relative;
+    
 }
 
 .task-list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #efefef;
+}
+
+.number {
+    border-radius: 15px;
+    height: 25px;
+    width: 25px;
+    background: #33cc66;
+    color: white;
+    line-height: 25px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.task-man {
+    height: 30px;
+    width: 60px;
+    border: solid 1px #efefef;
+    border-radius: 2px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-man p {
+    margin-right: 9px;
+    margin-top: 22px;
+    color:#2498f4;
+    font-size: 16px;
+}
+
+.task-list h2 {
+    padding-top: 10px;
 }
 
 .analytics {
     grid-column: 5/13;
     grid-row: 2/7;
     border-bottom: none;
+}
+
+.activity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#act-drop-down {
+    border: solid 1px #efefef;
+    border-radius: 2px;
 }
 
 .rec {
