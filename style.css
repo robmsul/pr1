@@ -221,11 +221,69 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 370px;
+    font-size: 14px;
+    margin-left: 10%;
 }
-#act-drop-down {
+
+.drop-bar {
     border: solid 1px #efefef;
     border-radius: 2px;
+    width: 163px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.date {
+    font-size: 14px;
+    color: #777777;
+    padding-left: 8px;
+    line-height: 10px;
+}
+.dropbtn {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border-left: solid 1px #efefef;
+    height: 100%;
+    width: 30px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    background-color: #f1f1f1;
+    min-width: 163px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #777777;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    padding-left: 8px;
+    margin: 8px 0px;
+    border-top: solid 1px #efefef;
+}
+
+.dropdown-content a:hover {
+    color: #2498f4;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: white;}
 
 #chart-box {
     display: flex;
@@ -244,6 +302,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     width: 80%;
+    margin-bottom: 30px;
 }
 
 .social-checkbox {
@@ -266,7 +325,7 @@ h2 {
     padding-left: 7px;
     padding-right: 10px;
     font-size: 10px;
-    line-height: 15px;
+    line-height: 18px;
 }
 
 #facebook {
@@ -286,6 +345,29 @@ h2 {
     grid-column: 1/5;
     grid-row: 7/13;
     border-right: none;
+}
+
+.rec-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px 15px 0px 15px;
+    border-bottom: dotted 1px #efefef;
+    padding-bottom: 0px;
+}
+
+.rec-text {
+    margin: -23px 0px -10px 20px;
+}
+
+.rec-text p {
+    margin-top: -24px;
+    font-weight: 200;
+}
+
+h6 {
+    font-weight: 100;
+    font-size: 10px;
 }
 
 .contacts {

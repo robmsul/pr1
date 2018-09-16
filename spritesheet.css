@@ -6,7 +6,7 @@
 .light-bulb, .arrow-left, .arrow-right
 { display: inline-block; background: url('img/spritesheet-1.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
  
-.chart { background-position: -1px -0px; width: 451px; height: 214px; }
+.chart { background-position: -1px -0px; width: 445px; height: 210px; }
 .people { background-position: -1px -215px; width: 268px; height: 171px; }
 .message-cloud { background-position: -1px -387px; width: 239px; height: 150px; }
 .swirl { background-position: -1px -538px; width: 225px; height: 160px; }
@@ -29,13 +29,13 @@
 .analytics-blue:hover { background-position: -330px -537px; width: 42px; height: 50px; }
 .search { background-position: -428px -301px; width: 23px; height: 22px; }
 .check-orange { background-position: -428px -324px; width: 22px; height: 21px; }
-.check { background-position: -428px -346px; width: 22px; height: 20px; }
+.check { background-position: -428px -346px; width: 22px; height: 20px; margin-right: -3px}
 .help { background-position: -428px -367px; width: 20px; height: 20px; padding: 0px 8px;}
 .man-blue { background-position: -396px -384px; width: 20px; height: 20px; margin-top: 3px; margin-left: 5px;}
 .settings-gray { background-position: -241px -387px; width: 20px; height: 20px; position: absolute; top: 25px; right: 15px; }
 .settings { background-position: -417px -388px; width: 20px; height: 20px; padding: 0px 0px 0px 0px;}
 .article { background-position: -420px -427px; width: 19px; height: 23px; }
 .ribbon-left { background-position: -373px -537px; width: 15px; height: 40px; }
-.light-bulb { background-position: -420px -451px; width: 14px; height: 23px; }
+.light-bulb { background-position: -420px -451px; width: 14px; height: 23px; margin-right: 5px}
 .arrow-left { background-position: -438px -388px; width: 11px; height: 18px; }
 .arrow-right { background-position: -396px -405px; width: 11px; height: 18px; }
