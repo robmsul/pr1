@@ -8,7 +8,11 @@
 </head>
 
 <body class="grid-container">
-    <div class="topbar"><div class="top-a"><p class="">MINI of Raleigh</p> <div class="top-b"><span class="help"></span><span class="settings"></span></div></div></div>
+    <div class="topbar">
+        <div id="toolbar">MINI of Raleigh</div>
+        <div class="help"></div>
+        <div class="settings"></div>
+    </div>
     <div class="navbar">
             <div class=" icon">
                 <div class="customers-blue"></div>
@@ -57,40 +61,48 @@
                     <div id="announcement"><p>ANNOUNCEMENTS</p></div>
                     <div>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus.</div>
                     <div id="arrows">
-                        <div class="arrow-left"></div>
-                        <div class="arrow-right"></div>
+                        <div> <button class="button" href="#"><div class="button-left"</div></button></div>
+                        <div> <button class="button" href="#"><div class="button-right"</div></button></div>
                     </div>
                 </div>
                 <div class="tasks outline">
                     <h1>Tasks</h1>
                     <div class="settings-gray"></div>
                     <div class="task-list">
-                        <div class="number">1</div>
-                        <div><h2>Welcome Contacts</h2></div>
+                        <div class="task-num">
+                            <div class="number">1</div>
+                            <div><h2>Welcome Contacts</h2></div>
+                        </div>
                         <div class="task-man">
                             <div class="man-blue"></div>
                             <p>32</p>
                         </div>
                     </div>
                     <div class="task-list">
-                        <div class="number">2</div>
-                        <div><h2>Provide Responses</h2></div>
+                        <div class="task-num">
+                            <div class="number">2</div>
+                            <div><h2>Provide Responses</h2></div>
+                        </div>
                         <div class="task-man">
                             <div class="man-blue"></div>
                             <p>36</p>
                         </div>
                     </div>
                     <div class="task-list">
-                        <div class="number">3</div>
-                        <div><h2>Review Activity</h2></div>
+                        <div class="task-num">
+                            <div class="number">3</div>
+                            <div><h2>Review Activity</h2></div>
+                        </div>
                         <div class="task-man">
                             <div class="man-blue"></div>
                             <p>36</p>
                         </div>
                     </div>
-                    <div class="task-list">
-                        <div class="number">4</div>
-                        <div><h2>Reach Out</h2></div>
+                    <div class="task-list" id="last">
+                        <div class="task-num">
+                            <div class="number">4</div>
+                            <div><h2>Reach Out</h2></div>
+                        </div>
                         <div class="task-man">
                             <div class="man-blue"></div>
                             <p>3</p>
@@ -106,7 +118,7 @@
                                 <div class="drop-bar">
                                     <div><p class="date">06/28/11 - 07/21/11</p></div>
                                     <div class="dropdown">
-                                        <div><button class="dropbtn"></button></div>
+                                        <div class="arrow-down"><button class="dropbtn"></button></div>
                                             <div class="dropdown-content">
                                               <a href="#">07/21/11 - 08/14/11</a>
                                               <a href="#">08/14/11 - 09/07/11</a>
@@ -182,8 +194,34 @@
                         </div>
                     </div>
                 </div>
-                <div class="contacts outline"><h1>Contacts</h1></div>
-                <div class="customers outline"><h1>Customers</h1></div>
+                <div class="con-cus outline">
+                    <div class="card">
+                        <div class="blue-bar">
+                            <h3>75 CONTACTS</h3>
+                            <p>4 INFLUENCERS</p>
+                            <div class="man-green"></div>
+                            <div class="ribbon-left"></div>
+                            <div class="ribbon-right"></div>
+                        </div>
+                        <div class="graph-box">
+                            <div class="graph-green"></div>
+                            <div class="under-graph"></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="blue-bar">
+                            <h3>17 CUSTOMERS</h3>
+                            <p>0 INFLUENCERS</p>
+                            <div class="man-orange"></div>
+                            <div class="ribbon-left"></div>
+                            <div class="ribbon-right"></div>
+                        </div>
+                        <div class="graph-box">
+                            <div class="graph-orange"></div>
+                            <div class="under-graph"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="q-a outline"><h1>Did you know?</h1></div>
             </div>
         </div>

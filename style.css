@@ -23,7 +23,7 @@ h2 {
 .grid-container {
     display:grid;
     grid-template-columns: auto 480px 480px auto;
-    grid-template-rows: 45px 110px 1000px 200px 25px; /*
+    grid-template-rows: 45px 110px auto 200px 25px; /*
     grid-template-areas:
         'top top top top'
         'nv nv nv nv'
@@ -46,19 +46,14 @@ h2 {
     font-weight: bolder;
     text-align: right;
     padding-right: 200px;
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: -20px;
 }
 
-.top-a {
-    position: absolute;
-    top: 10px;
-    right: 20%;
-}
-
-.top-b {
-    position: relative;
-    top: -30px;
-    left: 100px;
+#toolbar {
+    margin-right: 20px
 }
 
 .lines {
@@ -75,6 +70,7 @@ h2 {
 .gradient {
      background: repeating-linear-gradient(to right, rgba(19, 70, 112, 1), rgba(34, 98, 152, 1), rgba(19, 70, 112, 1))
 }
+
 .navbar {
     background: repeating-linear-gradient(
         -45deg,
@@ -159,8 +155,23 @@ h2 {
     display: flex;
     border-left: solid 1px #efefef;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
+.button {
+    border: none;
+    border-radius: 10px;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.button:after {
+    border: none;
+    border-radius: 20px;
+}
+
 }
 .tasks {
     grid-column: 1/5;
@@ -176,6 +187,15 @@ h2 {
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 1px #efefef;
+}
+ #last {
+    border-bottom: none;
+ }
+ 
+.task-num {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .number {
@@ -343,7 +363,7 @@ h2 {
 
 .rec {
     grid-column: 1/5;
-    grid-row: 7/13;
+    grid-row: 5/13;
     border-right: none;
 }
 
@@ -370,18 +390,54 @@ h6 {
     font-size: 10px;
 }
 
-.contacts {
-    grid-column: 5/9;
+.con-cus {
+    grid-column: 5/13;
     grid-row: 7/10;
     border-bottom: none;
+    display: flex;
+    justify-content: space-around;   
 }
 
-.customers {
+.card {
+    width: 210px;
+    height: 190px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 1px lightgrey;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+.cust {
     grid-column: 9/13;
     grid-row: 7/10;
     border-bottom: none;
 }
 
+.blue-bar {
+    position: relative;
+    top: 25px;
+    height: 50px;
+    background: #2394ee;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 100;
+    padding-top: 10px;
+}
+.blue-bar p {
+    font-size: 10px;
+    margin-top: -20px;
+}
+
+.graph-box {
+    width: 190px;
+    height: 65px;
+    border: solid 1px #efefef;
+    border-radius: 2px;
+    margin: 40px auto 7px auto;
+}
 .q-a {
     grid-column: 5/13;
     grid-row: 10/13;

@@ -12,11 +12,11 @@
 .swirl { background-position: -1px -538px; width: 225px; height: 160px; }
 .channels-chart { background-position: -270px -215px; width: 85px; height: 84px; }
 .referrals-chart { background-position: -356px -215px; width: 85px; height: 85px; }
-.man-green { background-position: -270px -300px; width: 78px; height: 82px; }
-.man-orange { background-position: -349px -301px; width: 78px; height: 82px; }
+.man-green { background-position: -270px -300px; width: 78px; height: 82px; position: relative; bottom: 137px; left: 22px}
+.man-orange { background-position: -349px -301px; width: 78px; height: 82px; position: relative; bottom: 137px; left: 22px}
 .customers-blue { background-position: -270px -383px; width: 62px; height: 42px; }
 .customers-blue:hover { background-position: -333px -384px; width: 62px; height: 42px; }
-.icon-shadow { background-position: -241px -424px; width: 60px; height: 5px; }
+.icon-shadow { background-position: -242px -424px; width: 56px; height: 5px; }
 .dashboard-blue { background-position: -302px -427px; width: 58px; height: 58px; }
 .dashboard-blue:hover { background-position: -361px -427px; width: 58px; height: 58px; }
 .messages-blue { background-position: -241px -432px; width: 57px; height: 48px; }
@@ -35,7 +35,20 @@
 .settings-gray { background-position: -241px -387px; width: 20px; height: 20px; position: absolute; top: 25px; right: 15px; }
 .settings { background-position: -417px -388px; width: 20px; height: 20px; padding: 0px 0px 0px 0px;}
 .article { background-position: -420px -427px; width: 19px; height: 23px; }
-.ribbon-left { background-position: -373px -537px; width: 15px; height: 40px; }
+.ribbon-left { background-position: -373px -537px; width: 15px; height: 40px; position: relative; right: 144px; bottom: 94px;}
 .light-bulb { background-position: -420px -451px; width: 14px; height: 23px; margin-right: 5px}
 .arrow-left { background-position: -438px -388px; width: 11px; height: 18px; }
 .arrow-right { background-position: -396px -405px; width: 11px; height: 18px; }
+
+ 
+.graph-green, .graph-orange, .under-graph, .button-left, .button-right, 
+.ribbon-right, .arrow-down
+{ display: inline-block; background: url('img/spritesheet-2.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.graph-green { background-position: -2px -0px; width: 190px; height: 47px; }
+.graph-orange { background-position: -2px -49px; width: 190px; height: 47px; }
+.under-graph { background-position: -2px -98px; width: 190px; height: 63px; position: relative; bottom: 50px;}
+.button-left { background-position: -2px -163px; width: 22px; height: 22px; }
+.button-right { background-position: -26px -163px; width: 22px; height: 22px; }
+.ribbon-right { background-position: -50px -163px; width: 15px; height: 40px; position: relative; left: 62px; bottom: 94px;}
+.arrow-down { background-position: -67px -163px; width: 10px; height: 6px; margin: 14px auto auto 9px;}
