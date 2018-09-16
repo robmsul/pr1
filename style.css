@@ -23,7 +23,7 @@ h2 {
 .grid-container {
     display:grid;
     grid-template-columns: auto 480px 480px auto;
-    grid-template-rows: 45px 110px auto 200px 25px; /*
+    grid-template-rows: 45px 110px auto auto 25px; /*
     grid-template-areas:
         'top top top top'
         'nv nv nv nv'
@@ -96,9 +96,71 @@ h2 {
 
 .news {
     grid-area: news;
-    background: green;
+    background:#2394ee;
     grid-column: 2/4;
     grid-row: 4/5;
+    margin: 0px 10px 0px 10px;
+    padding-bottom: 00px;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4);
+}
+
+.news-cards {
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.n-card {
+    width: 270px;
+    height: 160px;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4);
+}
+
+#watch {
+    position: relative;
+    text-align: right;
+    margin-right: 14px;
+    bottom: 128px;
+    line-height: 20px;
+}
+
+#watch h3 {
+    color: #33cc66;
+    font-weight: 100;
+    font-size: 19px;
+}
+
+#watch p {
+    font-size: 12px;
+    padding-top: 0px;
+    margin-top: -35px;
+}
+
+#people-box {
+    margin: 0px 8px 0px 8px;
+    width: 254px;
+    height: 30px;
+    background: #33cc66;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    position: relative;
+    bottom: 105px;
+    text-align: center;
+    line-height: 32px;
+}
+
+#version {
+    position: relative;
+    margin-left: 14px;
+    bottom: 128px;
+    line-height: 20px;
+    color: #fe7f13;
+    font-weight: 100;
+    font-size: 19px;
 }
 
 .footer {
@@ -106,6 +168,7 @@ h2 {
     background: red;
     grid-column: 1/5;
     grid-row: 5/6;
+    margin-top: 50px;
 }
 
 .gray-box {
@@ -117,7 +180,7 @@ h2 {
 .main-grid {
     display: grid;
     grid-template-columns: repeat (12, 1/12);
-    grid-template-rows: 50px auto auto auto auto auto auto 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px auto auto auto auto auto auto auto auto auto auto 100px;
     grid-gap: 0px;
     margin: 10px;
     position: relative;
@@ -441,6 +504,40 @@ h3 {
 .q-a {
     grid-column: 5/13;
     grid-row: 10/13;
+    display: flex;
+    justify-content: center;
+}
+
+.q-box {
+    height: auto;
+    min-height: 140px;
+    width: 93%;
+    margin: 20px auto 20px auto;
+    background:#2394ee;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.q-text {
+    width: 82%;
+    margin: 40px 9% 40px 9%;
+    color: white;
+}
+
+.slider-button-l {
+    background: white;
+    height: 50px;
+    width: 25px;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.slider-button-r {
+    background: white;
+    height: 50px;
+    width: 25px;
+    border-radius: 25px 0px 0px 25px;
 }
 .icon {
     padding: 0px 10px;

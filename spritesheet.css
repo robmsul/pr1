@@ -7,9 +7,9 @@
 { display: inline-block; background: url('img/spritesheet-1.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
  
 .chart { background-position: -1px -0px; width: 445px; height: 210px; }
-.people { background-position: -1px -215px; width: 268px; height: 171px; }
+.people { background-position: -1px -215px; width: 262px; height: 166px; position: relative; bottom: 10px; left: 2px}
 .message-cloud { background-position: -1px -387px; width: 239px; height: 150px; }
-.swirl { background-position: -1px -538px; width: 225px; height: 160px; }
+.swirl { background-position: -1px -538px; width: 225px; height: 160px; position: relative; left: 45px}
 .channels-chart { background-position: -270px -215px; width: 85px; height: 84px; }
 .referrals-chart { background-position: -356px -215px; width: 85px; height: 85px; }
 .man-green { background-position: -270px -300px; width: 78px; height: 82px; position: relative; bottom: 137px; left: 22px}
@@ -37,8 +37,8 @@
 .article { background-position: -420px -427px; width: 19px; height: 23px; }
 .ribbon-left { background-position: -373px -537px; width: 15px; height: 40px; position: relative; right: 144px; bottom: 94px;}
 .light-bulb { background-position: -420px -451px; width: 14px; height: 23px; margin-right: 5px}
-.arrow-left { background-position: -438px -388px; width: 11px; height: 18px; }
-.arrow-right { background-position: -396px -405px; width: 11px; height: 18px; }
+.arrow-left { background-position: -438px -388px; width: 11px; height: 18px; margin: 15px auto auto 2px;}
+.arrow-right { background-position: -396px -405px; width: 11px; height: 18px; margin: 15px auto auto 12px;}
 
  
 .graph-green, .graph-orange, .under-graph, .button-left, .button-right, 
