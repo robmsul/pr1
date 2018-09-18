@@ -34,7 +34,7 @@
     filter: grayscale(100%);}
 .customers-blue { background-position: -227px -547px; width: 62px; height: 42px; }
 .customers-blue:hover { background-position: -290px -547px; width: 62px; height: 42px; }
-.icon-shadow { background-position: -347px -547px; width: 47px; height: 5px; }
+.icon-shadow { background-position: -347px -547px; width: 47px; height: 5px; position: relative; right: 8px;}
 .dashboard-blue { background-position: -353px -553px; width: 58px; height: 58px; }
 .dashboard-blue:hover { background-position: -227px -590px; width: 58px; height: 58px; }
 .messages-blue { background-position: -286px -590px; width: 57px; height: 48px; }

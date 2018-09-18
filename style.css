@@ -31,7 +31,6 @@ h2 {
 
 .topbar {
     background: #2292eb;
-    grid-area: top;
     grid-column: 1/5;
     grid-row: 1/2;
     color: white;
@@ -43,7 +42,6 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: -20px;
 }
 
 #toolbar {
@@ -321,6 +319,10 @@ a:hover {
     position: relative; 
 }
 
+.tasks a {
+    text-decoration: none;
+}
+
 .task-list {
     display: flex;
     justify-content: space-between;
@@ -580,6 +582,10 @@ a:hover {
     padding-bottom: 0px;
 }
 
+.recom a {
+    text-decoration: none;
+    color: inherit;
+}
 .rec-text {
     margin: -23px 0px -10px 20px;
 }
@@ -740,7 +746,7 @@ h3 {
     }
     
     .topbar {
-    margin-right: -180px;
+        grid-column: 1/5;
 }
     
     .main-grid {
@@ -806,7 +812,7 @@ h3 {
 }
 
 @media screen and (max-width:860px){
-   
+
     .main-grid {
         grid-template-columns: fr fr;
         grid-template-rows: auto auto auto auto auto auto;
@@ -871,58 +877,74 @@ h3 {
     justify-content: center;
 }
 
+
 }
 
 @media screen and (max-width:595px){
-.pie-charts {
-    display: flex;
-    flex-direction: row;
-    border-left: none;
-    justify-content: space-around;
-    text-align: center;
-    padding-left: auto;
+    .pie-charts {
+        display: flex;
+        flex-direction: row;
+        border-left: none;
+        justify-content: space-around;
+        text-align: center;
+        padding-left: auto;
 }
 
-.channels-chart {
-    margin-right: 10px;
+    .channels-chart {
+        margin-right: 10px;
 }
 
-.referrals-chart {
-    margin-left: 10px;
+    .referrals-chart {
+        margin-left: 10px;
 }
 
-.arrow-up {
-    padding-right: 15px;
+    .arrow-up {
+        padding-right: 15px;
 }
 
-.foot-box {
-    padding-top: 10px;
+    .foot-box {
+        padding-top: 10px;
 }
 
-.foot-box div {
-    margin-top: 5px;
+    .foot-box div {
+        margin-top: 5px;
 }
 
-.activity {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 85%;
-    max-width: 451px;
-    font-size: 14px;
-    margin-left: 10%;
+    .activity {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        max-width: 451px;
+        font-size: 14px;
+        margin-left: 10%;
 }
 
-#chart-box {
-    display: block;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+    #chart-box {
+        display: block;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 
+    .topbar {
+        height: 25px;
+        grid-row: 1/5;
+        margin: none;
+        justify-content: space-around;
+        padding-right: 0px;
+    }
+    
+    .navbar {
+        margin-top: -25px;
+        padding-top: 5px;
+    }
 }
 
 @media screen and (max-width:500px){
+    .grid-container {
+        margin-right: 0px;
+    }
     .main-grid {
         grid-template-columns: 100%;
         grid-template-rows: repeat (7, auto)
@@ -952,7 +974,7 @@ h3 {
     align-items: center;
 }
     .q-a {
-    grid-column: 1/3;
+    grid-column: 1/2;
     grid-row: 6/7;
 }
 
@@ -992,9 +1014,40 @@ h3 {
     right: 0px;
     margin: -20px 0px -20px 0px;
 }
+    .social-boxes {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15px;
+    }
+    
+    
+    
 }
 
 @media screen and (max-width:375px){
+    
+    
+    #toolbar {
+        margin: auto;
+    }
+    
+    .topbar {
+        height: 25px;
+        grid-row: 1/2;
+        justify-content: space-around;
+        padding-right: 0px;
+        width: auto;
+    }
+    
+    .navbar {
+        margin-top: -25px;
+        padding-top: 5px;
+    }
+    
+    .help, .settings {
+        position: relative;
+        right: 60px;
+    }
     
 }
 }
