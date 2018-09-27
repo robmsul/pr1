@@ -20,6 +20,11 @@ h2 {
     margin-top: 10px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .grid-container {
     display:grid;
     grid-template-columns: auto 480px 480px auto;
@@ -462,6 +467,9 @@ a:hover {
     color: #2498f4;
 }
 
+.dropbtn:active .dropdown-content {
+    display: block;
+}
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: white;}
